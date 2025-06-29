@@ -1,7 +1,10 @@
+import Pbutton from "./button"
+import Jumbotron from "./jumbotron"
 import Navbar from "./navbar"
 function Header(){
-return <div className="w-full h-100 bg-kprimary rounded-br-full md:px-24 md:py-5">
+return <div className="w-full md:h-100 overflow-hidden bg-kprimary md:rounded-br-full relative z-0 md:px-24 md:py-5">
     <Navbar></Navbar>
+    <Jumbotron/>
 </div>
 }
 export default Header
