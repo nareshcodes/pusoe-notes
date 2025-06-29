@@ -2,10 +2,10 @@ import Universitylogo from "./universitylogo";
 
 function Featured() {
   let logos = [
-    "../src/assets/image/puse.png",
-    "../src/assets/image/eascol.png",
-    "../src/assets/image/acme.jpeg",
-    "../src/assets/image/khec.png",
+    "/image/puse.png",
+    "/image/eascol.png",
+    "/image/acme.jpeg",
+    "/image/khec.png",
   ];
   return (
     <section className="text-gray-600 bg-pbgcolor px-10 py-4">

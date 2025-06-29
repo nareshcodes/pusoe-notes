@@ -6,7 +6,7 @@ function Hero() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
             <div>
               <img
-                src="../src/assets/image/pusoe.jpg"
+                src="/image/pusoe.jpg"
                 className="rounded w-full h-full"
                 alt=""
               />
