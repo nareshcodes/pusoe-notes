@@ -7,25 +7,25 @@ function Popular(){
     image: "../src/assets/image/Engineering-Mathematics-I.jpg",
     productlink: "#"
   },{name:"Applied Mechanics",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/appliedmechanics.png",
     productlink: "#"
   },{name:"Basic Electrical Engineering",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/beee.jpeg",
     productlink: "#"
   },{name:"Digital Logic",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/digitallogic.jpg",
     productlink: "#"
   },{name:"Data Structure and Algorithms",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/dsa.jpg",
     productlink: "#"
   },{name:"C programming",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/cprogramming.jpeg",
     productlink: "#"
   },{name:"Python Programming",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/python.jpg",
     productlink: "#"
   },{name:"Numerical Methods",
-    image: "../src/assets/image/Engineering-Mathematics-I.jpg",
+    image: "../src/assets/image/numericalmethods.jpg",
     productlink: "#"
   },];
 return <section className="text-gray-600 px-10">
