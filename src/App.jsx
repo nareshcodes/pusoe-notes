@@ -8,6 +8,9 @@ import Footer from "./components/footer";
 import { useState } from "react";
 import Notes from "./components/notes";
 import Syllabus from "./components/syllabus";
+import Books from "./components/books";
+import Questions from "./components/question";
+import Contact from "./components/contact";
 function App() {
   const [page, setpage] = useState("notes");
   return (
@@ -23,6 +26,12 @@ function App() {
         {page == "notes" && <Notes />}
         {/* =============syllaubs========== */}
         {page == "syllabus" && <Syllabus />}
+        {/* =============Books============= */}
+        {page == "books" && <Books />}
+        {/* =============Questions============= */}
+        {page == "questions" && <Questions />}
+        {/* =============contact============= */}
+        {page == "contact" && <Contact />}
       </div>
       <Footer />
     </>
