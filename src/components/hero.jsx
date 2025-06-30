@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      <section>
+      <section className="container mx-auto">
         <div className="md:mx-30 max-w-screen-xl px-10 py-8 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
             <div>

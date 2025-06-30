@@ -45,7 +45,7 @@ function Popular() {
     },
   ];
   return (
-    <section className="text-gray-600 px-10">
+    <section className="container mx-auto text-gray-600 px-10 ">
       <div className="md:px-30 md:py-10 mx-auto">
         <div className="flex flex-col text-center w-full py-10">
           <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
