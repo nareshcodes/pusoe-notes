@@ -1,4 +1,4 @@
-import Pbutton from "./button";
+import Pbutton from "../utilities/button";
 
 function Jumbotron() {
   return (

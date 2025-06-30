@@ -1,4 +1,4 @@
-import StatsCard from "./statscard";
+import StatsCard from "../utilities/statscard";
 
 function Card() {
   let images = [

@@ -1,4 +1,4 @@
-import Universitylogo from "./universitylogo";
+import Universitylogo from "../utilities/universitylogo";
 
 function Featured() {
   let logos = [

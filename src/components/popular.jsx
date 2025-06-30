@@ -1,5 +1,5 @@
-import Pbutton from "./button";
-import ProductCard from "./productcard";
+import Pbutton from "../utilities/button";
+import ProductCard from "../utilities/productcard";
 
 function Popular() {
   let products = [
