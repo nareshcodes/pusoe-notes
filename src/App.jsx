@@ -6,16 +6,24 @@ import Popular from "./components/popular";
 import Team from "./components/team";
 import Footer from "./components/footer";
 import { useState } from "react";
+import Notes from "./components/notes";
+import Syllabus from "./components/syllabus";
 function App() {
-  const [page, setpage] = useState("home");
+  const [page, setpage] = useState("notes");
   return (
     <>
       <Header page={page} setpage={setpage} />
-      {page == "home" && <Card />}
-      {page == "home" && <Hero />}
-      {page == "home" && <Featured />}
-      {page == "home" && <Popular />}
-      {page == "home" && <Team />}
+      <div className="container-fluid min-h-screen">
+        {page == "home" && <Card />}
+        {page == "home" && <Hero />}
+        {page == "home" && <Featured />}
+        {page == "home" && <Popular />}
+        {page == "home" && <Team />}
+        {/* =============Notes============= */}
+        {page == "notes" && <Notes />}
+        {/* =============syllaubs========== */}
+        {page == "syllabus" && <Syllabus />}
+      </div>
       <Footer />
     </>
   );

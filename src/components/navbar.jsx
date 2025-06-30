@@ -6,12 +6,12 @@ function Navbar({ page, setpage }) {
         <div className="flex h-16 items-center justify-between font-menu text-3xl">
           <div className="flex-1 md :flex md:items-center md:gap-12">
             <a className="block text-teal-600" href="#">
-              <span className="sr-only">Home</span>
+              <span className="sr-only">Pusoe Notes</span>
               <h1 className=" text-menucolor">Pusoe Notes</h1>
             </a>
           </div>
 
-          <div className="md:flex md:items-center md:gap-12">
+          <div className="md:flex md:items-center md:gap-4">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-menu">
                 <li onClick={() => setpage("home")}>

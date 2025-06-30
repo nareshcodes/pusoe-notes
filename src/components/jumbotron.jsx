@@ -4,7 +4,7 @@ function Jumbotron() {
   return (
     <section>
       <div className="mx-auto max-w-screen-xl sm:px-15 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:items-center md:gap-5">
           <div>
             <div className="max-w-lg md:max-w-none px-4">
               <h2 className="text-2xl font-semibold font-menu text-gray-900 sm:text-3xl">
@@ -21,14 +21,11 @@ function Jumbotron() {
               <Pbutton label={"Download Notes"} />
             </div>
           </div>
-
-          <div>
-            <img
-              src="/image/computerstudents.png"
-              className="rounded md:pr-15  h-60 md:h-full w-full"
-              alt=""
-            />
-          </div>
+          <img
+            src="/image/computerstudents.png"
+            className="rounded md:mt-10 md:h-full w-full"
+            alt=""
+          />
         </div>
       </div>
     </section>

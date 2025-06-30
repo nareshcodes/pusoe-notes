@@ -8,7 +8,7 @@ function Card() {
   ];
 
   return (
-    <div className="flex md:gap-x-42 gap-x-4 gap-y-10 justify-center px-5 bg-gray-300 md:h-80 py-15">
+    <div className="flex md:gap-x-30 gap-x-4 gap-y-10 justify-center px-5 bg-gray-300 md:h-80 py-15">
       <StatsCard image={images[0]} label={"50+ Notes"} />
       <StatsCard image={images[1]} label={"50+ Books"} />
       <StatsCard image={images[2]} label={"150+ Students"} />
