@@ -1,5 +1,4 @@
-function Navbar({ page, setpage }) {
-  console.log(page);
+function Navbar() {
   return (
     <header className="bg-none">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-12">
@@ -14,7 +13,7 @@ function Navbar({ page, setpage }) {
           <div className="md:flex md:items-center md:gap-4">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-menu">
-                <li onClick={() => setpage("home")}>
+                <li>
                   <a
                     className="text-menucolor transition hover:text-gray-500/75"
                     href="#"
@@ -24,7 +23,7 @@ function Navbar({ page, setpage }) {
                   </a>
                 </li>
 
-                <li onClick={() => setpage("notes")}>
+                <li>
                   <a
                     className=" text-menucolor transition hover:text-gray-500/75"
                     href="#"
@@ -34,7 +33,7 @@ function Navbar({ page, setpage }) {
                   </a>
                 </li>
 
-                <li onClick={() => setpage("syllabus")}>
+                <li>
                   <a
                     className=" text-menucolor transition hover:text-gray-500/75"
                     href="#"
@@ -44,7 +43,7 @@ function Navbar({ page, setpage }) {
                   </a>
                 </li>
 
-                <li onClick={() => setpage("books")}>
+                <li>
                   <a
                     className=" text-menucolor transition hover:text-gray-500/75"
                     href="#"
@@ -54,7 +53,7 @@ function Navbar({ page, setpage }) {
                   </a>
                 </li>
 
-                <li onClick={() => setpage("questions")}>
+                <li>
                   <a
                     className=" text-menucolor transition hover:text-gray-500/75"
                     href="#"
@@ -64,7 +63,7 @@ function Navbar({ page, setpage }) {
                   </a>
                 </li>
 
-                <li onClick={() => setpage("contact")}>
+                <li>
                   <a
                     className=" text-menucolor transition hover:text-gray-500/75"
                     href="#"
