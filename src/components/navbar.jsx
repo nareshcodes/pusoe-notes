@@ -1,76 +1,78 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <header className="bg-none">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-12">
         <div className="flex h-16 items-center justify-between font-menu text-3xl">
           <div className="flex-1 md :flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="#">
+            <Link className="block text-teal-600" to={"#"}>
               <span className="sr-only">Pusoe Notes</span>
               <h1 className=" text-menucolor">Pusoe Notes</h1>
-            </a>
+            </Link>
           </div>
 
           <div className="md:flex md:items-center md:gap-4">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-menu">
                 <li>
-                  <a
+                  <Link
                     className="text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={'/'}
                   >
                     {" "}
                     Home{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className=" text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/notes"}
                   >
                     {" "}
                     Notes{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className=" text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/syllabus"}
                   >
                     {" "}
                     Syllabus{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className=" text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/books"}
                   >
                     {" "}
                     Books{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className=" text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/questions"}
                   >
                     {" "}
                     Questions{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className=" text-menucolor transition hover:text-gray-500/75"
-                    href="#"
+                    to={"/contact"}
                   >
                     {" "}
                     Contact{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
