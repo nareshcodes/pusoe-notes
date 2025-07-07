@@ -3,7 +3,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-     <Outlet/> 
+     <Outlet/>
      <Footer/>
     </>
   );

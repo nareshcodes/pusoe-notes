@@ -11,6 +11,9 @@ import {
 import Contact from "./components/contact.jsx";
 import Notes from "./components/notes.jsx";
 import HomePage from "./components/homepage.jsx";
+import Syllabus from "./components/syllabus.jsx";
+import Books from "./components/books.jsx";
+import Questions from "./components/question.jsx";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -20,12 +23,28 @@ const routes = createBrowserRouter([
     path: "/",
     element: <HomePage/>},
       {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
         path: "/notes",
         element: <Notes />,
+      },
+      {
+        path: "/notes/:id",
+        element: "Notes Component to be made and displayed here",
+      },
+      {
+        path: "/syllabus",
+        element: <Syllabus />,
+      },
+      {
+        path: "/books",
+        element: <Books />,
+      },
+      {
+        path: "/questions",
+        element: <Questions />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

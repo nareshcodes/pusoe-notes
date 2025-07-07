@@ -1,6 +1,6 @@
 import Pbutton from "../utilities/button";
 import ProductCard from "../utilities/productcard";
-
+import Navbar from "./navbar";
 function Syllabus() {
   let products = [
     {
@@ -45,8 +45,12 @@ function Syllabus() {
       productlink: "#",
     },
   ];
-  return (
-    <section className="container mx-auto text-gray-600 px-10 ">
+  return <>
+    <div className="w-full overflow-hidden bg-kprimary md:rounded-br-full relative z-0 md:px-24 md:py-5">
+      <Navbar/>
+    </div>
+
+    <section className="container mx-auto min-h-102 text-gray-600 px-10 ">
       <div className="md:px-30 md:py-4 mb-4 mx-auto">
         <div className="flex flex-col text-center w-full py-10">
           <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
@@ -65,6 +69,6 @@ function Syllabus() {
         </div>
       </div>
     </section>
-  );
+  </>
 }
 export default Syllabus;
