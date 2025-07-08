@@ -1,74 +1,61 @@
+import { useEffect, useState } from "react";
+import http from "../service/http";
 import Pbutton from "../utilities/button";
 import ProductCard from "../utilities/productcard";
 import Navbar from "./navbar";
 function Syllabus() {
-  let products = [
-    {
-      name: "First Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Second Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Third Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Fourth Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Fifth Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Sixth Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-    {
-      name: "Seventh Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
+  const [Syllabi, setSyllabi] = useState([]);
+    // State to handle loading state
+  const [loading, setLoading] = useState(true);
+  const [Error, setError] = useState([]);
 
-    {
-      name: "Eight Semester",
-      image: "/image/pdfdownload.png",
-      productlink: "#",
-    },
-  ];
-  return <>
-    <div className="w-full overflow-hidden bg-kprimary md:rounded-br-full relative z-0 md:px-24 md:py-5">
-      <Navbar/>
-    </div>
+  useEffect(() => {
+    fetchAllSyllabus();
+  }, []);
+  
+  const fetchAllSyllabus = async () => {
+    try {
+      // Make the API call
+      const response = await http.get("syllabus");
 
-    <section className="container mx-auto min-h-102 text-gray-600 px-10 ">
-      <div className="md:px-30 md:py-4 mb-4 mx-auto">
-        <div className="flex flex-col text-center w-full py-10">
-          <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
-            Select Syllabus
-          </h1>
-        </div>
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
-          {products.map((item) => (
+      // Update state with the received data
+      setSyllabi(response.data.data);
+      // Set loading to false
+        setLoading(false);
+    } catch (err) {
+      setError(err.message);
+      setLoading(false);
+    }
+  };
+  return (
+    <>
+      <div className="w-full overflow-hidden bg-kprimary md:rounded-br-full relative z-0 md:px-24 md:py-5">
+        <Navbar />
+      </div>
+
+      <section className="container mx-auto min-h-102 text-gray-600 px-10 ">
+        <div className="md:px-30 md:py-4 mb-4 mx-auto">
+          <div className="flex flex-col text-center w-full py-10">
+            <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
+              Select Syllabus
+            </h1>
+          </div>
+            {loading&&<div className="text-center">Loading...</div>}
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
+             
+            {Syllabi.map((item) => (
+              console.log(item),
             <ProductCard
-              key={item.name}
-              subject={item.name}
-              image={item.image}
-              productlink={item.productlink}
+              key={item.id}
+              subject={item.title}
+              image={item.photo}
+              productlink={item.document}
             />
           ))}
+          </div>
         </div>
-      </div>
-    </section>
-  </>
+      </section>
+    </>
+  );
 }
 export default Syllabus;
