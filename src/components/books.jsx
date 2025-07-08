@@ -5,7 +5,7 @@ function Books() {
       <Navbar/>
     </div>
 
-    <section className="container mx-auto min-h-102 text-gray-600 px-10 ">
+    <section className="container mx-auto min-h-screen text-gray-600 px-10 ">
       </section>
       </>
 }

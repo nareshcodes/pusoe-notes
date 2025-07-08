@@ -8,7 +8,7 @@ function Team() {
           Team Members
         </h1>
       </div>
-      <a href="#" className="group relative block bg-black">
+      <a href="#" className="relative group block  bg-black">
         <img
           alt=""
           src="/image/bimal.png"

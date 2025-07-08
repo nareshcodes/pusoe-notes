@@ -3,23 +3,26 @@ import http from "../service/http";
 import Pbutton from "../utilities/button";
 import ProductCard from "../utilities/productcard";
 import Navbar from "./navbar";
-function Syllabus() {
-  const [Syllabi, setSyllabi] = useState([]);
+import { useParams } from "react-router-dom";
+function SelectedNote() {
+    const {semester}= useParams();
+    console.log(semester)
+  const [SelectedNote, setSelectedNote] = useState([]);
     // State to handle loading state
   const [loading, setLoading] = useState(true);
   const [Error, setError] = useState([]);
 
   useEffect(() => {
-    fetchAllSyllabus();
+    fetchAllSelectedNote();
   }, []);
   
-  const fetchAllSyllabus = async () => {
+  const fetchAllSelectedNote = async () => {
     try {
       // Make the API call
-      const response = await http.get("syllabus");
+      const response = await http.get("notes/"+semester);
 
       // Update state with the received data
-      setSyllabi(response.data.data);
+      setSelectedNote(response.data.data);
       // Set loading to false
         setLoading(false);
     } catch (err) {
@@ -37,25 +40,25 @@ function Syllabus() {
         <div className="md:px-30 md:py-4 mb-4 mx-auto">
           <div className="flex flex-col text-center w-full py-10">
             <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
-              Select Syllabus
+                {semester} Notes
             </h1>
           </div>
             {loading&&<div className="text-center">Loading...</div>}
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
-             
-            {Syllabi.map((item) => (
+             {SelectedNote.map((item) => (
               console.log(item),
             <ProductCard
               key={item.id}
               subject={item.title}
-              image={item.photo}
+              image={item.featured_image}
               productlink={item.document}
             />
-          ))}
+          ))}   
+            
           </div>
         </div>
       </section>
     </>
   );
 }
-export default Syllabus;
+export default SelectedNote;
