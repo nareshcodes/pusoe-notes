@@ -3,6 +3,7 @@ import http from "../service/http";
 import Pbutton from "../utilities/button";
 import ProductCard from "../utilities/productcard";
 import Navbar from "./navbar";
+import Loading from "../utilities/loading";
 function Questions() {
   const [Question, setQuestion] = useState([]);
     // State to handle loading state
@@ -40,7 +41,7 @@ function Questions() {
               Download Questions
             </h1>
           </div>
-            {loading&&<div className="text-center">Loading...</div>}
+            {loading&&<div className="text-center"><Loading/></div>}
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
              
             {Question.map((item) => (

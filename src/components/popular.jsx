@@ -1,49 +1,32 @@
+import { useEffect, useState } from "react";
 import Pbutton from "../utilities/button";
 import ProductCard from "../utilities/productcard";
-
+import http from "../service/http";
+import Loading from "../utilities/loading";
 function Popular() {
-  let products = [
-    {
-      name: "Engineering Mathematics-I",
-      image: "/image/Engineering-Mathematics-I.jpg",
-      productlink: "#",
-    },
-    {
-      name: "Applied Mechanics",
-      image: "/image/appliedmechanics.png",
-      productlink: "#",
-    },
-    {
-      name: "Basic Electrical Engineering",
-      image: "/image/beee.jpeg",
-      productlink: "#",
-    },
-    {
-      name: "Digital Logic",
-      image: "/image/digitallogic.jpg",
-      productlink: "#",
-    },
-    {
-      name: "Data Structure and Algorithms",
-      image: "/image/dsa.jpg",
-      productlink: "#",
-    },
-    {
-      name: "C programming",
-      image: "/image/cprogramming.jpeg",
-      productlink: "#",
-    },
-    {
-      name: "Python Programming",
-      image: "/image/python.jpg",
-      productlink: "#",
-    },
-    {
-      name: "Numerical Methods",
-      image: "/image/numericalmethods.jpg",
-      productlink: "#",
-    },
-  ];
+  const [Featured, setFeatured] = useState([]);
+      // State to handle loading state
+    const [loading, setLoading] = useState(true);
+    const [Error, setError] = useState([]);
+  
+    useEffect(() => {
+      fetchAllFeatured();
+    }, []);
+    
+    const fetchAllFeatured = async () => {
+      try {
+        // Make the API call
+        const response = await http.get("featured");
+  
+        // Update state with the received data
+        setFeatured(response.data.data);
+        // Set loading to false
+          setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
   return (
     <section className="container mx-auto text-gray-600 px-10 ">
       <div className="md:px-30 md:py-10 mx-auto">
@@ -52,16 +35,19 @@ function Popular() {
             Popular Subjects
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-4">
-          {products.map((item) => (
+        {loading&&<div className="flex justify-center"><Loading type={'bars'} color={'#00ff0a'}/></div>}
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
+             
+            {Featured.map((item) => (
+              console.log(item),
             <ProductCard
-              key={item.name}
-              subject={item.name}
-              image={item.image}
-              productlink={item.productlink}
+              key={item.id}
+              subject={item.title}
+              image={item.featured_image}
+              productlink={item.document}
             />
           ))}
-        </div>
+          </div>
       </div>
 
       <div className="flex flex-col mx-auto w-45">

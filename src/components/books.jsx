@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import http from "../service/http";
 import ProductCard from "../utilities/productcard";
 import Navbar from "./navbar";
+import Loading from "../utilities/loading";
 function Books() {
   const [Book, setBook] = useState([]);
     // State to handle loading state
@@ -39,7 +40,7 @@ function Books() {
               Download Book
             </h1>
           </div>
-            {loading&&<div className="text-center">Loading...</div>}
+            {loading&&<div className="flex justify-center"><Loading/></div>}
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
              
             {Book.map((item) => (
