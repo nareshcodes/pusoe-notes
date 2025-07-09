@@ -5,7 +5,7 @@ function NoteCard({ subject, image }) {
   return (
     <div className="lg:w-1/5 md:w-1/5  w-45 justify-items-center mx-auto">
       <Link to ={{pathname:"/notes/"+subject}}
-        className="block relative h-55 w-35 rounded overflow-hidden"
+        className="block  h-55 w-35 rounded overflow-hidden"
       >
         <img
           alt="ecommerce"

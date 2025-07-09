@@ -54,7 +54,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 		}
 	}, [isModalOpen, blockScroll, allowScroll]);
   return (
-    <header className="bg-none">
+    <header className="bg-none z-1000">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-12">
         <div className="flex h-16 items-center justify-between font-menu text-3xl">
           <div className="flex-1 md :flex md:items-center md:gap-12">
@@ -90,12 +90,12 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                          {/* Navbar items and buttons */}
             <div
                 className={`fixed md:static md:hidden top-0 right-0 h-screen md:h-auto w-full md:w-auto bg-black/92 border-l md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none transition-transform duration-300 ease-in-out transform flex-1 ${isOpen ? "translate-x-0" : "translate-x-full"
-                    } md:translate-x-0 z-60`}
+                    } md:translate-x-0 z-1000`}
             >
 
               
                               {/* Logo and close icon Inside Toggle Menu */}
-                              <div className="w-full md:hidden flex items-center justify-between px-4">
+                              <div className="relative z-1000 w-full md:hidden flex items-center justify-between px-4">
                                   {/* Logo */}
                                  <Link className="block text-teal-600" to={"#"}>
               <span className="sr-only">Pusoe Notes</span>
@@ -114,7 +114,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                               
                 {/* Divider */}
                 <div className="border-b border-neutral-500 md:hidden"></div>
-                <div className="flex-1 flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-0">
+                <div className="relative z-1000 flex-1 flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-0">
                                     {/* Navbar items */}
                                     <ul className="flex flex-col md:flex-row items-center gap-6 text-white font-normal">
                                         {navItems.map((item) => (
