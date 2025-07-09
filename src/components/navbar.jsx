@@ -89,7 +89,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                         </div>
                          {/* Navbar items and buttons */}
             <div
-                className={`fixed md:static md:hidden top-0 right-0 h-screen md:h-auto w-full md:w-auto bg-black/92 border-l md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none transition-transform duration-300 ease-in-out transform flex-1 ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed md:static md:hidden top-0 right-0 h-screen md:h-auto w-full md:w-auto bg-black/85 border-l md:border-none border-neutral-300 md:bg-transparent shadow-lg md:shadow-none transition-transform duration-300 ease-in-out transform flex-1 ${isOpen ? "translate-x-0" : "translate-x-full"
                     } md:translate-x-0 z-1000`}
             >
 
@@ -105,9 +105,9 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                                   <div className="md:hidden flex justify-end py-4">
                                       <button
                                           onClick={toggleNavbar}
-                                          className="text-neutral-600 focus:outline-none"
+                                          className="text-kprimary focus:outline-none"
                                       >
-                                          <IoMdClose size={28} />
+                                          <IoMdClose size={30} />
                                       </button>
                                   </div>
                               </div>
