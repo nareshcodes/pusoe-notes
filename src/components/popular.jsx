@@ -36,7 +36,7 @@ function Popular() {
           </h1>
         </div>
         {loading&&<div className="flex justify-center"><Loading type={'bars'} color={'#00ff0a'}/></div>}
-          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4 md:mx-12">
              
             {Featured.map((item) => (
               console.log(item),
@@ -46,6 +46,7 @@ function Popular() {
               image={item.featured_image}
               productlink={item.document}
             />
+            
           ))}
           </div>
       </div>

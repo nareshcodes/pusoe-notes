@@ -41,7 +41,7 @@ function Books() {
             </h1>
           </div>
             {loading&&<div className="flex justify-center"><Loading/></div>}
-          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-x-24 lg:gap-y-10 md:mx-36">
              
             {Book.map((item) => (
               console.log(item),

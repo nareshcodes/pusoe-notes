@@ -29,8 +29,8 @@ function Contact() {
 
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
-    <div className="lg:w-2/4 max-sm:w-full max-sm:h-50 md:w-1/2 md:mx-auto md:my-20 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-      <iframe width="100%" height="100%" className="absolute inset-0" Border="0" title="map" Height="100%" overflow="hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.310640007973!2d87.27964399999999!3d26.477941199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7472f6a5a40d%3A0xb4639228159cf988!2sPurbanchal%20University%20School%20of%20Engineering%20-%20PUSOE!5e0!3m2!1sen!2snp!4v1752029641808!5m2!1sen!2snp" style={{grayscale:1, contrast:1.4, opacity:0.7}}></iframe>
+    <div className="lg:w-2/4 max-sm:w-full max-sm:h-48 md:w-1/2 md:mx-auto md:my-20 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <iframe width="100%" height="100%" className="absolute inset-0" border="0" title="map"  overflow="hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.310640007973!2d87.27964399999999!3d26.477941199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef7472f6a5a40d%3A0xb4639228159cf988!2sPurbanchal%20University%20School%20of%20Engineering%20-%20PUSOE!5e0!3m2!1sen!2snp!4v1752029641808!5m2!1sen!2snp" style={{grayscale:1, contrast:1.4, opacity:0.7}}></iframe>
       
     </div>
     <form onSubmit={onSubmit} className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 mb-8 md:mt-0">
