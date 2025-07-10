@@ -50,7 +50,7 @@ function Popular() {
           </div>
       </div>
 
-      <div className="flex flex-col mx-auto w-45">
+      <div className="flex justify-center w-45">
         <Pbutton label={"See All Notes"} />
       </div>
     </section>

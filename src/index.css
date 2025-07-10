@@ -1,22 +1,10 @@
-@import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0 auto;
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
   font-size: 400;
-}
-
-@theme {
-  --color-kprimary: #F5EFFF;
-  --color-ksecondary: #E5D9F2;
-  --color-pbgcolor: #CDC1FF;
-  --color-sbgcolor: #A294F9;
-  --color-footer: #101828;
-  --color-menucolor:#A294F9;
-  --color-h1color: #A294F9;
-  --color-btnprimary:#A294F9;
-
-  --font-menu:  "PT Sans Caption", sans-serif;
-  --text-menu : 18px;
 }
