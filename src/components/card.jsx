@@ -21,10 +21,10 @@ function Card() {
       y:-50,
       scrollTrigger:{
         trigger:".statcard",
-        markers:true,
+        markers:false,
         start:"top 50%",
-        end:"60px top",
-        // toggleActions:"restart pause pause pause"
+        end:"120px top",
+        toggleActions:"play reverse play stop"
       }
     })
   })

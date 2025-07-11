@@ -17,6 +17,7 @@ const HeaderAnimation = (refcontent,refImg) => {
         trigger:refcontent.current,
         markers:false,
         end:"25px 40px",
+        toggleActions:"restart reverse play pause"
       }
     })
   })
@@ -32,6 +33,7 @@ const HeaderAnimation = (refcontent,refImg) => {
         trigger:refcontent.current,
         markers:false,
         end:"200px top",
+        toggleActions:"restart reverse play pause"
       }
     })
   })

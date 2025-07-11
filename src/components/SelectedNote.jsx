@@ -44,7 +44,7 @@ function SelectedNote() {
                 {semester} Notes
             </h1>
           </div>
-            {loading&&<div className="text-center"><Loading/></div>}
+            {loading&&<div className="text-center z-0"><Loading/></div>}
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-x-24 lg:gap-y-10 md:mx-36">
              {SelectedNote.map((item) => (
               console.log(item),
