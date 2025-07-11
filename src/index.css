@@ -7,4 +7,5 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-size: 400;
+  scroll-behavior: smooth;
 }

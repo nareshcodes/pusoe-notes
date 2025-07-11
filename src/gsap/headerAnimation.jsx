@@ -16,8 +16,7 @@ const HeaderAnimation = (refcontent,refImg) => {
       scrollTrigger:{
         trigger:refcontent.current,
         markers:false,
-        end:"30px 40px",
-        toggleActions:"play reverse play pause"
+        end:"25px 40px",
       }
     })
   })
@@ -33,7 +32,6 @@ const HeaderAnimation = (refcontent,refImg) => {
         trigger:refcontent.current,
         markers:false,
         end:"200px top",
-        toggleActions:"restart reverse play pause"
       }
     })
   })
