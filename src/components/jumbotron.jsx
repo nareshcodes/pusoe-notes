@@ -1,12 +1,18 @@
 import Pbutton from "../utilities/button";
+import HeaderAnimation from "../gsap/headerAnimation";
+import { useRef } from "react";
+
 
 function Jumbotron() {
+  const gsapContent =useRef();
+   const gsapImg =useRef();
+   HeaderAnimation(gsapContent,gsapImg);
   return (
     <section>
       <div className="mx-auto max-w-screen-xl sm:px-15 lg:px-8">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:items-center md:gap-5">
-          <div>
-            <div className="max-w-lg md:max-w-none px-4">
+          <div  className="content">
+            <div ref={gsapContent} className="max-w-lg md:max-w-none px-4">
               <h2 className="text-2xl font-semibold font-menu text-gray-900 sm:text-3xl">
                 Computer Engineering
               </h2>
@@ -21,7 +27,7 @@ function Jumbotron() {
               <Pbutton label={"Download Notes"} />
             </div>
           </div>
-          <img
+          <img ref={gsapImg}
             src="/image/computerstudents.png"
             className="rounded md:mt-10 md:h-full w-full"
             alt=""
