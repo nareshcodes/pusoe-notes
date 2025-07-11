@@ -7,7 +7,7 @@ const HeaderAnimation = (refcontent,refImg) => {
     
   useGSAP(()=>{
     gsap.from(refcontent.current,{
-      duration:2,
+      duration:1,
       opacity:0,
       delay:0,
       scale:0,
@@ -24,7 +24,7 @@ const HeaderAnimation = (refcontent,refImg) => {
     //============   Animating Img=====================
    useGSAP(()=>{
     gsap.from(refImg.current,{
-      duration:2,
+      duration:1,
       opacity:0,
       delay:0,
       scale:0,
