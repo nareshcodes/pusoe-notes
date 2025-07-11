@@ -7,9 +7,9 @@ const HeaderAnimation = (refcontent,refImg) => {
     
   useGSAP(()=>{
     gsap.from(refcontent.current,{
-      duration:1,
+      duration:2,
       opacity:0,
-      delay:0.1,
+      delay:0,
       scale:0,
       ease:"power3.inOut",
       x:-500,
@@ -24,9 +24,9 @@ const HeaderAnimation = (refcontent,refImg) => {
     //============   Animating Img=====================
    useGSAP(()=>{
     gsap.from(refImg.current,{
-      duration:1,
+      duration:2,
       opacity:0,
-      delay:0.1,
+      delay:0,
       scale:0,
       ease:"power3.inOut",
       scrollTrigger:{
