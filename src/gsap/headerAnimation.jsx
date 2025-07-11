@@ -31,7 +31,7 @@ const HeaderAnimation = (refcontent,refImg) => {
       ease:"power3.inOut",
       scrollTrigger:{
         trigger:refcontent.current,
-        markers:true,
+        markers:false,
         end:"200px top",
         toggleActions:"restart reverse play pause"
       }
