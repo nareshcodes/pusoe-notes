@@ -30,10 +30,9 @@ function Notes() {
   };
   return (
     <>
-      <div className="w-full overflow-hidden bg-kprimary md:rounded-br-full relative z-0 md:px-24 md:py-5">
+       <div className="w-full overflow-hidden bg-kprimary md:rounded-br-full relative md:px-24 md:py-5">
         <Navbar />
       </div>
-
       <section className="container mx-auto min-h-screen text-gray-600 px-10 ">
         <div className="md:px-30 md:py-4 mb-4 mx-auto">
           <div className="flex flex-col text-center w-full py-10">

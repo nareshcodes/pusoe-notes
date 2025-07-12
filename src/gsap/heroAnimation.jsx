@@ -3,10 +3,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger);
-const HeaderAnimation = (refContent,refImg) => {
+const HeroAnimation = (refImg,refcontent) => {
     
   useGSAP(()=>{
-    gsap.from(refContent.current,{
+    gsap.from(refImg.current,{
       duration:1,
       opacity:0,
       delay:0,
@@ -14,29 +14,33 @@ const HeaderAnimation = (refContent,refImg) => {
       ease:"power3.inOut",
       x:-500,
       scrollTrigger:{
-        trigger:refContent.current,
+        trigger:".hero",
         markers:false,
-        end:"25px 40px",
-        toggleActions:"restart reverse play pause"
+        start:"20px 60%",  
+        end:"70px 30px",
+        toggleActions:"restart reverse restart reverse"
       }
     })
   })
-    //============   Animating refImg=====================
+    //============   Animating Img=====================
    useGSAP(()=>{
-    gsap.from(refImg.current,{
+    gsap.from(refcontent.current,{
       duration:1,
       opacity:0,
       delay:0,
       scale:0,
+      x:500,
       ease:"power3.inOut",
       scrollTrigger:{
-        trigger:"header",
+        trigger:".hero",
         markers:false,
-        end:"200px top",
-        toggleActions:"restart reverse play pause"
+        start:"20px 60%",
+        end:"25px 70px",
+        
+        toggleActions:"restart reverse restart reverse"
       }
     })
   })
 }
 
-export default HeaderAnimation
+export default HeroAnimation

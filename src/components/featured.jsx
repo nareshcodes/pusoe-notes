@@ -15,7 +15,7 @@ function Featured() {
             Featured Universities
           </h1>
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 featured">
           {logos.map((logo) => (
             <Universitylogo key={logo} logo={logo} />
           ))}

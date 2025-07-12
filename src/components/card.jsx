@@ -20,11 +20,11 @@ function Card() {
       ease:"powerin.1",
       y:-50,
       scrollTrigger:{
-        trigger:".statcard",
+        trigger:".stats",
         markers:false,
         start:"top 50%",
-        end:"120px top",
-        toggleActions:"play reverse play stop"
+        end:"120px 60px",
+        toggleActions:"restart reverse play reverse"
       }
     })
   })

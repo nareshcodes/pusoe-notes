@@ -1,14 +1,35 @@
 import Card from "./card";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Team() {
+  useGSAP(() => {
+    gsap.from(".group", {
+      stagger: 0.1,
+      ease: "power1.in",
+      scale: 0,
+      opacity: 0,
+      y: 100,
+      scrollTrigger: {
+        trigger: ".group",
+        markers: false,
+        scrub: false,
+        start: "0px bottom",
+        end: "-100px 90%",
+        toggleActions: "pause restart reset reverse",
+      },
+    }),
+      { scope: ".team" };
+  });
   return (
-    <div className="flex container-fluid mx-auto  flex-wrap justify-center bg-gray-300 md:h-full py-10">
+    <div className="flex team container-fluid mx-auto  flex-wrap justify-center bg-gray-300 md:h-full py-10">
       <div className="flex justify-center w-full">
         <h1 className="sm:text-3xl text-2xl font-semibold title-font text-gray-900 font-menu mb-10">
           Team Members
         </h1>
       </div>
-      <div className="container grid justify-center lg:px-28 grid-cols-2 mx-5 md:grid-cols-4 md:gap-x-15 gap-x-10  gap-y-10">
+      <div className="container  grid justify-center lg:px-28 grid-cols-2 mx-5 md:grid-cols-4 md:gap-x-15 gap-x-10  gap-y-10">
         <a href="#" className="relative group block  bg-black">
           <img
             alt=""
