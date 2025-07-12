@@ -29,7 +29,7 @@ function Featured() {
   ];
   return (
     <section className="text-gray-600 bg-pbgcolor mx-auto py-4 featured">
-      <div className="md:mx-60  md:py-4">
+      <div className="md:mx-60  md:py-4 mx-10">
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
             Featured Universities

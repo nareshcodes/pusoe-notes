@@ -17,7 +17,7 @@ function Team() {
         scrub:2,
         start: "0px bottom",
         end: "-100px 90%",
-        toggleActions: " restart reverse ",
+        toggleActions: "restart reverse",
       },
     }),
       { scope: ".team" };
