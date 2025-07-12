@@ -18,7 +18,7 @@ const HeroAnimation = (refImg,refcontent) => {
         markers:false,
         start:"20px 60%",  
         end:"70px 30px",
-        toggleActions:"restart reverse restart reverse"
+        toggleActions:"restart none none reverse"
       }
     })
   })
@@ -37,7 +37,7 @@ const HeroAnimation = (refImg,refcontent) => {
         start:"20px 60%",
         end:"25px 70px",
         
-        toggleActions:"restart reverse restart reverse"
+        toggleActions:"restart none none reverse"
       }
     })
   })

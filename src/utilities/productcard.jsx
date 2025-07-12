@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 function ProductCard({ subject, image, productlink }) {
   return (
-    <div className=" w-[10rem] h-[14rem] justify-items-center mx-auto">
+    <div className=" w-[8rem] h-[12rem] justify-items-center mx-auto">
       <Link to ={productlink}
-        className="w-[10rem] h-[14rem] block rounded overflow-hidden"
+        className="w-[8rem] h-[12rem] block rounded overflow-hidden"
       >
         <img
           alt="ecommerce"
-          className="object-cover w-[10rem] h-[14rem]  block "
+          className="object-cover w-[8rem] h-[12rem]  block "
           src={image}
         />
       </Link>

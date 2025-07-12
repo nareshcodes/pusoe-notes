@@ -9,3 +9,9 @@ body {
   font-size: 400;
   scroll-behavior: smooth;
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}

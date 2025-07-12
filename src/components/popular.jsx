@@ -16,14 +16,14 @@ function Popular() {
       opacity: 0,
       y: 100,
       scrollTrigger: {
-        trigger: ".pop",
+        trigger: ".popular",
         markers: false,
         scrub: false,
         start:"20px 60%",  
         end:"60% top",
-        toggleActions:"restart reverse restart reverse"
+        toggleActions:"restart none none reverse"
       },
-    }),{scope:".popular"}
+    })
   });
 
   const [Featured, setFeatured] = useState([]);
@@ -51,15 +51,15 @@ function Popular() {
     };
 
   return (
-    <section className="container mx-auto text-gray-600 px-10">
-      <div className="md:px-30 md:py-10 mx-auto pop ">
+    <section className="container mx-auto text-gray-600 popular">
+      <div className="md:py-10 mx-auto pop ">
         <div className="flex flex-col text-center w-full py-10">
           <h1 className="sm:text-3xl text-2xl font-menu font-semibold title-font text-gray-900">
             Popular Subjects
           </h1>
         </div>
         {loading&&<div className="flex justify-center z-0"><Loading type={'bars'} color={'#00ff0a'}/></div>}
-          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4 md:mx-12 mb-8">
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4 md:mx-24 px-6 pb-16">
             {Featured.map((item) => (
               <ProductCard
                key={item.id}

@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Team() {
   useGSAP(() => {
     gsap.from(".group", {
-      stagger: 0.1,
+      stagger:0.1,
       ease: "power1.in",
       scale: 0,
       opacity: 0,
@@ -14,10 +14,10 @@ function Team() {
       scrollTrigger: {
         trigger: ".group",
         markers: false,
-        scrub: false,
+        scrub:2,
         start: "0px bottom",
         end: "-100px 90%",
-        toggleActions: "pause restart reset reverse",
+        toggleActions: " restart reverse ",
       },
     }),
       { scope: ".team" };
