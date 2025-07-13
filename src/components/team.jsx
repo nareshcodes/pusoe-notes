@@ -5,22 +5,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function Team() {
   useGSAP(() => {
-    gsap.from(".group", {
-      stagger:0.1,
-      ease: "power1.in",
-      scale: 0,
-      opacity: 0,
-      y: 100,
-      scrollTrigger: {
-        trigger: ".group",
-        markers: false,
-        scrub:2,
-        start: "0px bottom",
-        end: "-100px 90%",
-        toggleActions: "restart reverse",
+    gsap.from(
+      ".group",
+      {
+        stagger: 0.1,
+        ease: "power1.in",
+        scale: 0,
+        opacity: 0,
+        y: 100,
+        scrollTrigger: {
+          trigger: ".group",
+          scroll: "body",
+          markers: false,
+          scrub: 2,
+          start: "0px bottom",
+          end: "-100px 90%",
+          toggleActions: "restart reverse",
+        },
       },
-    }),
-      { scope: ".team" };
+      { scope: ".team" }
+    );
   });
   return (
     <div className="flex team container-fluid mx-auto  flex-wrap justify-center bg-gray-300 md:h-full py-10">
