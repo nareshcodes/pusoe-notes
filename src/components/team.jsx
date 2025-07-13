@@ -20,7 +20,7 @@ function Team() {
           scrub: 2,
           start: "0px bottom",
           end: "-100px 90%",
-          toggleActions: "restart reverse",
+          toggleActions: "play pause resume reset",
         },
       },
       { scope: ".team" }

@@ -14,7 +14,7 @@ function NoteCard({ subject, image }) {
         />
       </Link>
 
-      <h2 className="text-gray-900 title-font text-lg font-medium mt-2 text-center">
+      <h2 className="text-gray-900 title-font leading-none text-lg font-medium text-center">
         {subject}
       </h2>
     </div>

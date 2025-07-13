@@ -67,7 +67,7 @@ function Popular() {
             <Loading type={"bars"} color={"#00ff0a"} />
           </div>
         )}
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4 md:mx-24 px-6 pb-16">
+        <div className="grid grid-cols-2 gap-x-2 gap-y-8 lg:grid-cols-4 lg:gap-4 md:mx-24 px-6">
           {Featured.map((item) => (
             <ProductCard
               key={item.id}
@@ -79,7 +79,7 @@ function Popular() {
         </div>
       </div>
 
-      <div className="flex justify-center w-45 pop">
+      <div className="flex justify-center w-45 pop mt-4">
         <Pbutton label={"See All Notes"} />
       </div>
     </section>
