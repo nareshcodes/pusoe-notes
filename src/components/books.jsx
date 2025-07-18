@@ -10,6 +10,7 @@ function Books() {
   const [Error, setError] = useState([]);
 
   useEffect(() => {
+     window.scrollTo(0, 0);
     fetchAllBook();
   }, []);
   

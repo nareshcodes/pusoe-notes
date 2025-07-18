@@ -11,6 +11,7 @@ function Syllabus() {
   const [Error, setError] = useState([]);
 
   useEffect(() => {
+     window.scrollTo(0, 0);
     fetchAllSyllabus();
   }, []);
   

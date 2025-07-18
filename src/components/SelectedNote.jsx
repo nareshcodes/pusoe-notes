@@ -13,6 +13,7 @@ function SelectedNote() {
   const [Error, setError] = useState([]);
 
   useEffect(() => {
+     window.scrollTo(0, 0);
     fetchAllSelectedNote();
   }, []);
   
