@@ -34,7 +34,7 @@ function Team() {
         </h1>
       </div>
       <div className="container  grid justify-center lg:px-28 grid-cols-2 mx-5 md:grid-cols-4 md:gap-x-15 gap-x-10  gap-y-10">
-        <a href="#" className="relative group block  bg-black">
+        <a href="https://www.instagram.com/vimalsubedi?igsh=MWszM2s1azlnaWludg==" target="_replace" className="relative group block  bg-black">
           <img
             alt=""
             src="/image/bimal.png"
@@ -52,7 +52,7 @@ function Team() {
             </div>
           </div>
         </a>
-        <a href="#" className="relative group block  bg-black">
+        <a href="https://www.instagram.com/rakeshray4122?igsh=MWljNXZteGtpaWhyMA==" target="_replace" className="relative group block  bg-black">
           <img
             alt=""
             src="/image/rakesh.jpg"
@@ -70,7 +70,7 @@ function Team() {
             </div>
           </div>
         </a>
-        <a href="#" className="relative group block  bg-black">
+        <a href="https://www.instagram.com/puskarkhawas_?igsh=MWdyaXlzNmRlNjhi" target="_replace" className="relative group block  bg-black">
           <img
             alt=""
             src="/image/puskar.png"
@@ -88,7 +88,7 @@ function Team() {
             </div>
           </div>
         </a>
-        <a href="#" className="relative group block  bg-black">
+        <a href="https://www.instagram.com/nareshcodes?igsh=d3pnMzluamJsdnZk" target="_replace" className="relative group block  bg-black">
           <img
             alt=""
             src="/image/naresh.png"
