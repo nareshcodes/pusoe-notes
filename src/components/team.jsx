@@ -88,7 +88,7 @@ function Team() {
             </div>
           </div>
         </a>
-        <a href="https://www.instagram.com/nareshcodes?igsh=d3pnMzluamJsdnZk" target="_replace" className="relative group block  bg-black">
+        <a href="https://www.instagram.com/naressshhh__" target="_replace" className="relative group block  bg-black">
           <img
             alt=""
             src="/image/naresh.png"
