@@ -44,7 +44,7 @@ function Team() {
           <div className="relative  p-4 sm:p-6 lg:p-8">
             <div className="">
               <p className="text-sm font-medium tracking-widest text- text-pink-500 uppercase mt-40 text-center w-35">
-                Graphics Designer
+                
               </p>
               <p className="text-xl font-semibold  text-kprimary sm:text-1xl w-35 text-center uppercase">
                 Bimal Subedi
@@ -62,7 +62,6 @@ function Team() {
           <div className="relative  p-4 sm:p-6 lg:p-8">
             <div className="">
               <p className="text-sm font-medium tracking-widest text- text-pink-500 uppercase mt-40 text-center w-35">
-                Frontend Designer
               </p>
               <p className="text-xl font-semibold  text-kprimary sm:text-1xl w-35 text-center uppercase">
                 Rakesh Ray
@@ -80,7 +79,6 @@ function Team() {
           <div className="relative   p-4 sm:p-6 lg:p-8">
             <div className="">
               <p className="text-sm font-medium tracking-widest text- text-pink-500 uppercase mt-40 text-center w-35">
-                Frontend Developer
               </p>
               <p className="text-xl font-semibold  text-kprimary sm:text-1xl w-35 text-center uppercase">
                 Puskar Khawas
@@ -98,7 +96,6 @@ function Team() {
           <div className="relative p-4 sm:p-6 lg:p-8">
             <div className="">
               <p className="text-sm font-medium tracking-widest text- text-pink-500 uppercase mt-40 text-center w-35">
-                Fullstack Developer
               </p>
               <p className="text-xl font-semibold  text-kprimary sm:text-1xl w-35 text-center uppercase">
                 Naresh Chaudhary
